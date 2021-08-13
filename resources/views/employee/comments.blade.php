@@ -55,7 +55,7 @@
                                     @foreach ($comments as $comment) 
                                         <td>{{$comment->project->project_title}}</td>
                                         <td>{{$comment->comment}}</td>
-                                        <td>{{$comment->comment}}</td>
+                                        <td>{{$comment->user->full_name}}</td>
                                         <td>{{$comment->created_at}}</td>
                                 </tr>
                                      @endforeach

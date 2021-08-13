@@ -4,58 +4,38 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
- @include('includes.manager_sidebar')         
-
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content">
 
-@include('includes.manager_topnav')                
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Project progress</h1>
-                        <a href="Project Progresses" download class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                            class="fas fa-download fa-sm text-white-50"></i> Download</a>
-                    </div>
 
             <!-- DataTales Example -->
             <div class="row">
             <div class="container-fluid">       
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Project progress</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">Project Status</h6>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <table class="table table-bordered" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>Employee Name</th>
                                     <th>Project Name</th>
-                                    <th>Project Status</th>
+                                    <th>Status</th>
                                 </tr>
                             </thead>
-                            <tfoot>
-                                <tr>
-                                    <th>Employee Name</th>
-                                    <th>Project Name</th>
-                                    <th>Project Status</th>
-                                </tr>
-                            </tfoot>
                             <tbody>
                                 <tr>
-                                    @foreach ($statuses as $status) 
-                                    <td>{{$status->user->full_name}}</td>
-                                    <td>{{$status->project->project_title}}</td>
-                                    <td>{{$status->status}}</td>
-                                 </tr>
-                                @endforeach
+                                    @foreach (Auth::user()->status as $status) 
+                                        <td>{{$status->project->project_title}}</td>
+                                        <td>{{$status->status}}</td>
+                                </tr>
+                                    @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -83,7 +63,7 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
+    {{-- <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -101,5 +81,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

@@ -20,8 +20,8 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <a href="Registered Projects" download class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                            class="fas fa-download fa-sm text-white-50"></i> Download</a>
                     </div>
 
                     <!-- Content Row -->
@@ -161,7 +161,7 @@
                         <div class="col-xl-4 col-lg-5">
                             <div classzz="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
-                                <div
+                                {{-- <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Project Overview</h6>
                                     <div class="dropdown no-arrow">
@@ -178,7 +178,7 @@
                                             <a class="dropdown-item" href="dashboard">HOME</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                                 <!-- Card Body -->
                                 
 

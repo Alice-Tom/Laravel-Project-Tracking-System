@@ -23,6 +23,12 @@
     <!-- Custom styles for the table -->
     <link href="{{ asset('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 
+    {{-- icon --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png')}}?v={{ date('YmdHis') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png')}}?v={{ date('YmdHis') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png')}}?v={{ date('YmdHis') }}">
+    <link rel="manifest" href="{{ asset('site.webmanifest')}}?v={{ date('YmdHis') }}">
+
 </head>
 
 <body id="page-top">
@@ -52,6 +58,10 @@
 
     <!-- Table level custom scripts -->
     <script src="{{ asset('js/demo/datatables-demo.js')}}"></script>
+
+    <script src="{{ asset('js/jquery.js') }}"></script>
+  <script src="{{ asset('js/jquery.print.js') }}"></script>
+  <script src="{{ asset('js/scripts.js') }}"></script>
 
 </body>
 

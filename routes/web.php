@@ -9,6 +9,7 @@ use App\Http\Controllers\EchartController;
 use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\ProgressController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\PrintController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
@@ -46,7 +47,9 @@ Route::get('manager/dashboard', [ManagerController::class, 'ManagerProject'])->n
 // Route::get('manager/dashboard', [ProgressController::class, 'ReportWriting'])->name('manager.dashboard');
 
 Route::get('manager/view_projects', [ProjectController::class, 'ManagerProject']);
+Route::get('manager/Registered Projects', [PrintController::class, 'ManagerProject'])->name('manager.print_preview_projects');
 Route::get('manager/view_progress', [ProgressController::class, 'ManagerProgress']);
+Route::get('manager/Project Progresses', [PrintController::class, 'ManagerProgress']);
 
 Route::get('manager/comment/{id}', [CommentController::class, 'ManagerComment'])->name('getbyid');
 Route::post('manager/comment/{id}/post', [CommentController::class, 'store'])->name('postcomment');
@@ -61,11 +64,13 @@ Route::get('employee/register_project', [ProjectController::class, 'index']);
 Route::post('employee/register_project', [ProjectController::class, 'store'])->name('postproject');
 Route::get('/employee/deleteproject/{id}', [App\Http\Controllers\ProjectController::class, 'destroy'])->name('delete');
 Route::get('employee/view_projects', [ProjectController::class, 'EmployeeProject'])->name('employee.view_projects');
+Route::get('employee/Registered Projects', [PrintController::class, 'EmployeeProject'])->name('employee.print_preview_projects');
 
 Route::get('employee/add_status/{id}', [ProgressController::class, 'index'])->name('employee.add_status');
 Route::post('employee/add_status/{id}/post', [ProgressController::class, 'store'])->name('poststatus');
 
 Route::get('employee/view_progress', [ProgressController::class, 'EmployeeProgress']);
+Route::get('employee/Project Progresses', [PrintController::class, 'EmployeeProgress']);
 
 Route::get('employee/comments', [CommentController::class, 'show'])->name('showcomments');
 

@@ -20,8 +20,8 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">{{$projects->count()}} Projects</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Print</a>
+                        <a href="Registered Projects" download class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                            class="fas fa-download fa-sm text-white-50"></i> Download</a>
                     </div>
 
             <!-- DataTales Example -->
@@ -60,19 +60,25 @@
                                         <td>{{$project->end_date}}</td>
                                         <td>{{$project->description}}</td>
                                         <td>
-                                            <a class="btn btn-primary btn-icon-split" href="edit_project/{{$project->id}}">
+                                        <a class="btn btn-info btn-icon-split" href="add_status/{{$project->id}}">
                                             <span class="icon text-white-50">
                                             <i class="fas fa-edit"></i>
                                             </span>
-                                        <span class="text">Edit</span>
+                                            <span class="text">Status</span>
+                                        </a> 
+                                        &nbsp
+                                        <a class="btn btn-primary btn-icon-split" href="edit_project/{{$project->id}}">
+                                            <span class="icon text-white-50">
+                                            <i class="fas fa-edit"></i>
+                                            </span>
+                                            <span class="text">Edit</span>
                                         </a>
                                         &nbsp
-                                    
                                         <a class="btn btn-danger btn-icon-split" onclick="return confirm('Are you sure you want to delete {{$project->project_title}} project?')" href="deleteproject/{{$project->id}}">
                                             <span class="icon text-white-50">
                                             <i class="fas fa-trash"></i>
                                             </span>
-                                        <span class="text">Delete</span>
+                                            <span class="text">Delete</span>
                                         </a> 
                                         {{-- <a class="btn btn-info btn-icon-split" href="edit_status/{{$project->id}}">
                                             <span class="icon text-white-50">
