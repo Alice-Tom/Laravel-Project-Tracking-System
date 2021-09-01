@@ -64,7 +64,7 @@ class CommentController extends Controller
      */
     public function show(Comment $comment)
     {
-        $comments = Comment::with('user','project')->get();
+        $comments = Comment::with('user','project')->where('project_id', $comment->projects)->get();
         // dd($comments);
         return view('employee.comments', ['comments' => $comments]); 
     }

@@ -123,7 +123,8 @@
                                             <p align="center" style="color: red">All fields marked with * are required</p>  
                         
                                             @if (session('success'))
-                                              <div class="alert alert-success" role="alert">
+                                              <div class="alert alert-success alert-dismissible" role="alert">
+                                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                                   {{session('success')}}
                                               </div>
                                             @endif
