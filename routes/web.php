@@ -59,7 +59,8 @@ Route::post('manager/comment/{id}/post', [CommentController::class, 'store'])->n
 Route::get('employee/profile', [ProfileController::class, 'index'])->name('profile');
 Route::post('employee/profile/update/{id}', [ProfileController::class, 'update'])->name('updateprofile');
 
-Route::get('employee/dashboard', [EmployeeController::class, 'index'])->name('employee.dashboard');;
+Route::get('employee/dashboard', [EmployeeController::class, 'index'])->name('employee.dashboard');
+// Route::get('employee/dashboard', [EmployeeController::class, 'countPlanning']);
 Route::get('employee/register_project', [ProjectController::class, 'index']);
 Route::post('employee/register_project', [ProjectController::class, 'store'])->name('postproject');
 Route::get('/employee/deleteproject/{id}', [App\Http\Controllers\ProjectController::class, 'destroy'])->name('delete');
@@ -72,7 +73,7 @@ Route::post('employee/add_status/{id}/post', [ProgressController::class, 'store'
 Route::get('employee/view_progress', [ProgressController::class, 'EmployeeProgress']);
 Route::get('employee/Project Progresses', [PrintController::class, 'EmployeeProgress']);
 
-Route::get('employee/comments', [CommentController::class, 'show'])->name('showcomments');
+Route::get('employee/comments', [CommentController::class, 'showComments']);
 
 Route::get('employee/edit_project/{id}', [ProjectController::class, 'edit'])->name('getid');
 Route::post('employee/edit_project/update&{id}', [ProjectController::class, 'update'])->name('updateproject');

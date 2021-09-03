@@ -59,8 +59,6 @@
     </div>
         <!-- End of Main Content -->
 
-@include('includes.footer') 
-
      </div>
     <!-- End of Content Wrapper -->
 

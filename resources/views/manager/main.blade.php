@@ -34,6 +34,8 @@
 <body id="page-top">
 
     @yield('content') 
+                                
+                                
 
    <!-- Bootstrap core JavaScript-->
    <script src="{{ asset('vendor/jquery/jquery.min.js')}}"></script>
@@ -60,8 +62,7 @@
     <script src="{{ asset('js/demo/datatables-demo.js')}}"></script>
 
     {{-- piechart --}}
-    {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">	
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> --}}
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 
 </html>

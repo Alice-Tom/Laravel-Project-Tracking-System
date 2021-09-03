@@ -21,10 +21,14 @@ class ManagerController extends Controller
         return view('manager.dashboard');
     }
 
-    public function ManagerProject()
+    public function ManagerProject(Request $request)
     {
         $projects = Project::with('user')->get();
-        return view('manager.dashboard')->with('projects', $projects);
+        $planning = Status::where('status','=','System Plannign and Selection')->get()->count();
+        $analysis = Status::where('status','=','System Analysis')->get()->count();
+        $design = Status::where('status','=','System Design')->get()->count();
+        $implementation = Status::where('status','=','System Implementation and Prototype Testing')->get()->count();
+        return view('manager.dashboard',compact('projects','planning','analysis','design','implementation'));
     }
     
 

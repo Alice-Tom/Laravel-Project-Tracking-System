@@ -62,7 +62,7 @@ class CommentController extends Controller
      * @param  \App\Models\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function show(Comment $comment)
+    public function showComments(Comment $comment)
     {
         $comments = Comment::with('user','project')->where('project_id', $comment->projects)->get();
         // dd($comments);

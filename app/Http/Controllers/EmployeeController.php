@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
+use App\Models\Status;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -17,6 +18,12 @@ class EmployeeController extends Controller
         $projects = Auth::user()->projects;
         return view('employee.dashboard',compact('projects'));
     }
+
+    public function countPlanning()
+    {
+        $count = Status::where('status','=','System Plannign and Selection')->count();
+    }
+
 
     public function EmployeeProject()
     {
