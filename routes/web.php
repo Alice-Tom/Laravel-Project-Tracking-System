@@ -73,7 +73,7 @@ Route::post('employee/add_status/{id}/post', [ProgressController::class, 'store'
 Route::get('employee/view_progress', [ProgressController::class, 'EmployeeProgress']);
 Route::get('employee/Project Progresses', [PrintController::class, 'EmployeeProgress']);
 
-Route::get('employee/comments', [CommentController::class, 'showComments']);
+Route::get('employee/comments', [CommentController::class, 'show']);
 
 Route::get('employee/edit_project/{id}', [ProjectController::class, 'edit'])->name('getid');
 Route::post('employee/edit_project/update&{id}', [ProjectController::class, 'update'])->name('updateproject');

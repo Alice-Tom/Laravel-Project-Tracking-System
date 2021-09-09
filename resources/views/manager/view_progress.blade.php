@@ -51,8 +51,8 @@
                             <tbody>
                                 <tr>
                                     @foreach ($statuses as $status) 
-                                    <td>{{$status->user->full_name}}</td>
-                                    <td>{{$status->project->project_title}}</td>
+                                    <td>{{optional($status->user)->full_name}}</td>
+                                    <td>{{optional($status->project)->project_title}}</td>
                                     <td>{{$status->status}}</td>
                                  </tr>
                                 @endforeach

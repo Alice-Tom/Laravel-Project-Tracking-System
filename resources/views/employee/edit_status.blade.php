@@ -68,7 +68,7 @@
     <li class="nav-item">
         <a class="nav-link" href="../view_progress">
             <i class="fas fa-fw fa-chart-area"></i>
-            <span>View Progress</span></a>
+            <span>View Project Progress</span></a>
     </li>
 
     <!-- Divider -->

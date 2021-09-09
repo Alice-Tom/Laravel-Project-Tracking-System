@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
@@ -15,6 +16,7 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         return view('employee.comments');
@@ -53,6 +55,7 @@ class CommentController extends Controller
         
         $request->session()->flash('success', 'Comment posted successfully.');
             return redirect()->back();
+
         }
     }
 
@@ -62,9 +65,10 @@ class CommentController extends Controller
      * @param  \App\Models\Comment  $comment
      * @return \Illuminate\Http\Response
      */
-    public function showComments(Comment $comment)
+    public function show()
     {
-        $comments = Comment::with('user','project')->where('project_id', $comment->projects)->get();
+        // $userComment = Auth::user()->user_id;
+        $comments = Auth::user()->projects()->with('user','project')->get();
         // dd($comments);
         return view('employee.comments', ['comments' => $comments]); 
     }

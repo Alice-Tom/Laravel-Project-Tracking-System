@@ -51,7 +51,7 @@
                             <tbody>
                                 <tr>
                                     @foreach (Auth::user()->status as $status) 
-                                        <td>{{$status->project->project_title}}</td>
+                                        <td>{{optional($status->project)->project_title}}</td>
                                         <td>{{$status->status}}</td>
                                         <td>
                                         <a class="btn btn-primary btn-icon-split" href="edit_status/{{$status->id}}">
