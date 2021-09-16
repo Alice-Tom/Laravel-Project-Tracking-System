@@ -1,4 +1,4 @@
-@extends('manager.main')
+@extends('employee.main')
 @section('content')
 
     <!-- Page Wrapper -->
