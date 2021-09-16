@@ -11,8 +11,14 @@
 <link rel="stylesheet" type="text/css" href="{{secure_asset('plugins/OwlCarousel2-2.3.4/owl.carousel.css')}}">
 <link rel="stylesheet" type="text/css" href="{{secure_asset('plugins/OwlCarousel2-2.3.4/owl.theme.default.css')}}">
 <link rel="stylesheet" type="text/css" href="{{secure_asset('plugins/OwlCarousel2-2.3.4/animate.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('styles/main_styles.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('styles/responsive.css')}}">
+
+@production
 <link rel="stylesheet" type="text/css" href="{{secure_asset('styles/main_styles.css')}}">
 <link rel="stylesheet" type="text/css" href="{{secure_asset('styles/responsive.css')}}">
+@endproduction
+
 <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/apple-touch-icon.png')}}?v={{ date('YmdHis') }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon-32x32.png')}}?v={{ date('YmdHis') }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('images/favicon-16x16.png')}}?v={{ date('YmdHis') }}">
