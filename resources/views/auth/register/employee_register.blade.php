@@ -37,7 +37,7 @@
 			<nav class="main_nav">
 				<ul class="d-flex flex-row align-items-center justify-content-center">
 					<li><a href="/">home</a></li>
-					<li><a href="about.html">about</a></li>
+					<li><a href="about">about</a></li>
 					<li><a href="login">login</a></li>
 					<li class="active">
 						<div class="dropdown dropdown-menu-right">
@@ -69,7 +69,7 @@
 			<nav class="main_nav">
 				<ul class="d-flex flex-row align-items-center justify-content-center">
 					<li><a href="/">home</a></li>
-					<li><a href="about.html">about</a></li>
+					<li><a href="about">about</a></li>
 					<li><a href="login">login</a></li>
 					<li class="active">
 						<div class="dropdown dropdown-menu-right">
@@ -100,7 +100,7 @@
 				<nav class="menu_nav text-center">
 					<ul>
 						<li><a href="/">home</a></li>
-						<li><a href="about.html">about</a></li>
+						<li><a href="about">about</a></li>
 						<li><a href="login">login</a></li>
 						<li class="active">
 							<div class="dropdown dropdown-menu-right">

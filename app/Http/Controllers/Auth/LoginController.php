@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 use App\Models\User;
-use\Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
