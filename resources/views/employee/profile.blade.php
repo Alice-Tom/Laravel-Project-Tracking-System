@@ -57,7 +57,7 @@
 
                                                 {{-- email --}}
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{$employee->email}}" required>
+                                                    <input type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email" value="{{$employee->email}}" required>
                                                         @error('email')
                                                             <div class="alert alert-danger">
                                                                 {{ $message }}
