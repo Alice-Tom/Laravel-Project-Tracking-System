@@ -7,7 +7,7 @@ use App\Models\Project;
 use App\Models\Manager;
 use App\Models\Progress;
 use App\Models\User;
-use\Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;

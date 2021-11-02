@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Status;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
-use\Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class EchartController extends Controller
