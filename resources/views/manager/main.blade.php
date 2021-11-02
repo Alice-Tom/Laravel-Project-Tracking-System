@@ -83,11 +83,6 @@
     {{-- piechart --}}
     <script type="text/javascript" src="{{ secure_asset('https://www.gstatic.com/charts/loader.js')}}"></script>
 
-     {{-- icon --}}
-     <link rel="apple-touch-icon" sizes="180x180" href="{{ secure_asset('images/apple-touch-icon.png')}}?v={{ date('YmdHis') }}">
-     <link rel="icon" type="image/png" sizes="32x32" href="{{ secure_asset('images/favicon-32x32.png')}}?v={{ date('YmdHis') }}">
-     <link rel="icon" type="image/png" sizes="16x16" href="{{ secure_asset('images/favicon-16x16.png')}}?v={{ date('YmdHis') }}">
-     <link rel="manifest" href="{{ secure_asset('site.webmanifest')}}?v={{ date('YmdHis') }}">
      
     {{-- for locally --}}
  <!-- Bootstrap core JavaScript-->
