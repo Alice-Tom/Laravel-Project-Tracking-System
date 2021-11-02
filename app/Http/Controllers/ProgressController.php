@@ -71,7 +71,7 @@ class ProgressController extends Controller
         ]);
 
         $request->session()->flash('success', 'Project status successfully added!');
-            return redirect()->back();
+            return redirect()->route('employee.view_projects');
             // return redirect('employee/view_progress');
         }
     }
