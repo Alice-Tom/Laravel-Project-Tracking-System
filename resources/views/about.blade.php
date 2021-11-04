@@ -235,7 +235,7 @@
 				<!-- Intro Box -->
 				<div class="intro_box d-flex flex-column align-items-center justify-content-center text-center">
 					<div class="intro_box_icon"><img src="images/icon_1.svg" alt=""></div>
-					<div class="intro_box_title"><h3>MANAGEGE</h3></div>
+					<div class="intro_box_title"><h3>MANAGE</h3></div>
 					<div class="intro_box_text">
 						<p>Manage all your projects in one place</p>
 					</div>
