@@ -132,7 +132,16 @@
 								<div class="row">
 									<div class="col">
 										<div class="home_content active">
-											{{-- <div class="home_subtitle">MANAGE YOUR PROJECTS</div> --}}
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<div class="home_subtitle">A PLACE WHERE YOU CAN EASILY <br> MANAGE ALL YOUR PROJECTS</div>
 											<div class="home_title">
 												{{-- <h1><span>A</span>GREAT</h1> --}}
 												{{-- <h1>MANAGER</h1> --}}
@@ -156,7 +165,16 @@
 								<div class="row">
 									<div class="col">
 										<div class="home_content">
-											{{-- <div class="home_subtitle">STORE YOUR PROJECTS</div> --}}
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<div class="home_subtitle">VIEW AND COMMENT ON PROJECTS OF <br> ALL YOUR EMPLOYEES INORDER</div>
 											<div class="home_title">
 												{{-- <h1><span>CAN'T LOOSE</span>A</h1> --}}
 												{{-- <h1>THING</h1> --}}
@@ -180,7 +198,16 @@
 								<div class="row">
 									<div class="col">
 										<div class="home_content">
-											{{-- <div class="home_subtitle">TRACK YOUR PROEJCTS</div> --}}
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<br>
+											<div class="home_subtitle">STORE AND TRACK ALL YOUR <br>PROJECTS IN ONE PLACE</div>
 											<div class="home_title">
 												{{-- <h1><span>TRACK</span>THEM</h1> --}}
 												{{-- <h1>ALL</h1> --}}
@@ -208,7 +235,7 @@
 				<!-- Intro Box -->
 				<div class="intro_box d-flex flex-column align-items-center justify-content-center text-center">
 					<div class="intro_box_icon"><img src="images/icon_1.svg" alt=""></div>
-					<div class="intro_box_title"><h3>MAANGE</h3></div>
+					<div class="intro_box_title"><h3>MANAGEGE</h3></div>
 					<div class="intro_box_text">
 						<p>Manage all your projects in one place</p>
 					</div>
