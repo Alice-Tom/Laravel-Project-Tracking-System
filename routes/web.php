@@ -49,7 +49,7 @@ Route::get('manager/dashboard', [ManagerController::class, 'ManagerProject'])->n
 Route::get('manager/view_projects', [ProjectController::class, 'ManagerProject']);
 Route::get('manager/Registered Projects', [PrintController::class, 'ManagerProject'])->name('manager.print_preview_projects');
 Route::get('manager/view_progress', [ProgressController::class, 'ManagerProgress']);
-Route::get('manager/Project Progresses', [PrintController::class, 'ManagerProgress']);
+Route::get('manager/Project Progresses', [PrintController::class, 'ManagerProgress'])->name('manager.print_preview_progresses');
 
 Route::get('manager/comment/{id}', [CommentController::class, 'ManagerComment'])->name('getbyid');
 Route::post('manager/comment/{id}/post', [CommentController::class, 'store'])->name('postcomment');
@@ -71,7 +71,7 @@ Route::get('employee/add_status/{id}', [ProgressController::class, 'index'])->na
 Route::post('employee/add_status/{id}/post', [ProgressController::class, 'store'])->name('poststatus');
 
 Route::get('employee/view_progress', [ProgressController::class, 'EmployeeProgress']);
-Route::get('employee/Project Progresses', [PrintController::class, 'EmployeeProgress']);
+Route::get('employee/Project Progresses', [PrintController::class, 'EmployeeProgress'])->name('employee.print_preview_progresses');
 
 Route::get('employee/comments', [CommentController::class, 'show']);
 
